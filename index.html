@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <div id="logo">
             <img src="Images/Logo4.png">
@@ -23,121 +22,160 @@
         </nav>
         <div id="login">Login</div>
     </header>
-<main>
-    <div class="home-logo">
-        <img src="Images/logo-shadow2.png">
-    </div>
-    <section class="promotion">
-        <article>
-            <img src="Images/Promotion1.png">
-        </article>
-    </section>
-    <div class="menu-start">
-        <div class="menu">
-            <h2>Menu</h2>
+    <main>
+        <div class="home-logo">
+            <img src="Images/logo-shadow2.png">
         </div>
-        <div class="menu-line"></div>
-    </div>
-    <section class="food">
-        <article>
-            <img src="Images/Burger.png" alt="Burger">
-            <h2>Burger</h2>
-            <p>Description of Dish 1.</p>
-        </article>
-        <article>
-            <img src="Images/Pizza.jpeg" alt="Pizza">
-            <h2>Pizza</h2>
-            <p>Description of Dish 2.</p>
-        </article>
-        <article>
-            <img src="Images/Sandwich.jpg" alt="Sandwich">
-            <h2>Sandwich</h2>
-            <p>Description of Dish 3.</p>
-        </article>
-        <article>
-            <img src="Images/Burrito.jpeg" alt="Burritos">
-            <h2>Burritos</h2>
-            <p>Description of Dish 4.</p>
-        </article>
-        <article>
-            <img src="Images/Tacos.jpeg" alt="Taco">
-            <h2>Taco</h2>
-            <p>Description of Dish 5.</p>
-        </article>
-        <article>
-            <img src="Images/Desserts.jpeg" alt="Desserts">
-            <h2>Desserts</h2>
-            <p>Description of Dish 6.</p>
-        </article>
-    </section>
-    <div class="table-selection">
-        <form>
-            <input type="date">
-            <input type="time">
-            <input type="radio" name="table-slider" id="seater-4-indoor" checked>
-            <input type="radio" name="table-slider" id="seater-6-indoor">
-            <input type="radio" name="table-slider" id="seater-2-outdoor">
-            <input type="radio" name="table-slider" id="seater-4-outdoor">
-            <input type="radio" name="table-slider" id="seater-6-outdoor">
-            <input type="radio" name="table-slider" id="seater-2-indoor">
+        <section class="promotion">
+            <article>
+                <img src="Images/Promotion1.png">
+            </article>
+        </section>
+        <section>
+            <div class="menu-start">
+                <div class="menu">
+                    <h2>Menu</h2>
+                </div>
+                <div class="menu-line"></div>
+            </div>
+        </section>
+        <section class="food">
+            <article>
+                <img src="Images/Burger.png" alt="Burger">
+                <h2>Burger</h2>
+                <p>Description of Dish 1.</p>
+            </article>
+            <article>
+                <img src="Images/Pizza.jpeg" alt="Pizza">
+                <h2>Pizza</h2>
+                <p>Description of Dish 2.</p>
+            </article>
+            <article>
+                <img src="Images/Sandwich.jpg" alt="Sandwich">
+                <h2>Sandwich</h2>
+                <p>Description of Dish 3.</p>
+            </article>
+            <article>
+                <img src="Images/Burrito.jpeg" alt="Burritos">
+                <h2>Burritos</h2>
+                <p>Description of Dish 4.</p>
+            </article>
+            <article>
+                <img src="Images/Tacos.jpeg" alt="Taco">
+                <h2>Taco</h2>
+                <p>Description of Dish 5.</p>
+            </article>
+            <article>
+                <img src="Images/Desserts.jpeg" alt="Desserts">
+                <h2>Desserts</h2>
+                <p>Description of Dish 6.</p>
+            </article>
+        </section>
+    </main>
+    <div class="outer-container">
+        <form class="container">
+            <input type="date" name="Date" id="Booked-date" required>
+            <input type="time" name="time" id="Booked-time" required>
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
             <div class="cards">
-                <label class="card" for="seater-4-indoor" id="table-4-indoor">
-                    <img src="Images/Indoor-4.jpg">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="Images/Indoor-4.jpg" alt="song">
                 </label>
-                <label class="card" for="seater-6-indoor" id="table-6-indoor">
-                    <img src="Images/Indoor-6.jpg">
+                <label class="card" for="item-2" id="song-2">
+                    <img src="Images/Indoor-6.jpg" alt="song">
                 </label>
-                <label class="card" for="seater-2-outdoor" id="table-2-outdoor">
-                    <img src="Images/Outdoor-2.png">
+                <label class="card" for="item-3" id="song-3">
+                    <img src="Images/Outdoor-2.png" alt="song">
                 </label>
-                <label class="card" for="seater-4-outdoor" id="table-4-outdoor">
-                    <img src="Images/Outdoor-4.png">
+                <label class="card" for="item-4" id="song-4">
+                    <img src="Images/Outdoor-4.png" alt="song">
                 </label>
-                <label class="card" for="seater-6-outdoor" id="table-6-outdoor">
-                    <img src="Images/Outdoor-6.png">
-                </label>
-                <label class="card" for="seater-2-indoor" id="table-2-indoor">
-                    <img src="Images/Indoor-2.jpg">
+                <label class="card" for="item-5" id="song-5">
+                    <img src="Images/Indoor-2.jpg" alt="song">
                 </label>
             </div>
-            <div class="info-bar">
-                <div class="indoor-4">
-                    <div class="title">4 People in Indoor</div>
-                    <div class="subtitle">Table which can fit 4 people</div>
-                </div>
-                <div class="indoor-6">
-                    <div class="title">6 People in Indoor</div>
-                    <div class="subtitle">Table which can fit 6 people</div>
-                </div>
-                <div class="outdoor-2">
-                    <div class="title">2 People in outdoor</div>
-                    <div class="subtitle">Table which can fit 2 people</div>
-                </div>
-                <div class="outdoor-4">
-                    <div class="title">4 People in outdoor</div>
-                    <div class="subtitle">Table which can fit 4 people</div>
-                </div>
-                <div class="outdoor-6">
-                    <div class="title">6 People in outdoor</div>
-                    <div class="subtitle">Table which can fit 6 people</div>
-                </div>
-                <div class="indoor-2">
-                    <div class="title">2 People in Indoor</div>
-                    <div class="subtitle">Table which can fit 2 people</div>
+            <div class="details-left">
+                <section>
+                    <h2>Chairs</h2>
+                    <div class="slider-left">
+                        <div class="info-area" id="top">
+                            <label class="song-info" id="song-info-1">
+                                <div class="title">2</div>
+                            </label>
+                            <label class="song-info" id="song-info-2">
+                                <div class="title">4</div>
+                            </label>
+                            <label class="song-info" id="song-info-3">
+                                <div class="title">6</div>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Seating</h2>
+                    <div class="slider-left">
+                        <div class="info-area" id="bottom">
+                            <label class="song-info" id="song-info-1">
+                                <div class="title">Indoor</div>
+                            </label>
+                            <label class="song-info" id="song-info-2">
+                                <div class="title">Outdoor</div>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="details-right">
+                <div class="slider-right">
+                    <div class="info-area" id="test">
+                    <label class="song-info" id="song-info-1">
+                        <div class="title">one</div>
+                        <div class="sub-line">
+                        <div class="subtitle">Balthazar</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                        <div class="title">two</div>
+                        <div class="sub-line">
+                        <div class="subtitle">Moderator</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                        <div class="title">three</div>
+                        <div class="sub-line">
+                        <div class="subtitle">Otzeki</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-4">
+                        <div class="title">four</div>
+                        <div class="sub-line">
+                        <div class="subtitle">Balthazar</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-5">
+                        <div class="title">five</div>
+                        <div class="sub-line">
+                        <div class="subtitle">Moderator</div>
+                        </div>
+                    </label>
+                    </div>
                 </div>
             </div>
+            <input type="submit" name="Proceed" id="button-submit">     
         </form>
     </div>
-</main>
-
-<footer>
-    <div>
-        <img id="foot-logo" src="Images/Logo3.png" alt="Little Lemon Logo (Small)">
-    </div>
-    <div>
-        <p>&copy; 2024 Little Lemon. All rights reserved.</p>
-    </div>
-</footer>
+    <footer>
+        <div>
+            <img id="foot-logo" src="Images/Logo3.png" alt="Little Lemon Logo (Small)">
+        </div>
+        <div>
+            <p>&copy; 2024 Little Lemon. All rights reserved.</p>
+        </div>
+    </footer>
 
 <script src="script.js"></script>
 </body>
