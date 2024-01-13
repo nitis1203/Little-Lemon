@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     position: relative;
-    background-image: url('Images/bg2.jpg');
+    background-image: url('https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/bg2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

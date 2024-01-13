@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Lemon</title>
-    <link rel="icon" href="Images/Logo1.png" type="image/png">
+    <link rel="icon" href="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Logo1.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div id="logo">
-            <img src="Images/Logo4.png">
+            <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Logo4.png">
         </div>
         <nav>
             <ul>
@@ -24,11 +24,11 @@
     </header>
     <main>
         <div class="home-logo">
-            <img src="Images/logo-shadow2.png">
+            <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/logo-shadow2.png">
         </div>
         <section class="promotion">
             <article>
-                <img src="Images/Promotion1.png">
+                <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Promotion1.png">
             </article>
         </section>
         <section id="menu">
@@ -40,32 +40,32 @@
             </div>
             <section class="food">
                 <article>
-                    <img src="Images/Burger.png" alt="Burger">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Burger.png" alt="Burger">
                     <h2>Burger</h2>
                     <p>Savor perfection in every bite, a symphony of flavor.</p>
                 </article>
                 <article>
-                    <img src="Images/Pizza.jpeg" alt="Pizza">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Pizza.jpeg" alt="Pizza">
                     <h2>Pizza</h2>
                     <p>A slice of heaven - where each bite tells a story.</p>
                 </article>
                 <article>
-                    <img src="Images/Sandwich.jpg" alt="Sandwich">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Sandwich.jpg" alt="Sandwich">
                     <h2>Sandwich</h2>
                     <p>Layers of delight, crafted for your culinary satisfaction.</p>
                 </article>
                 <article>
-                    <img src="Images/Burrito.jpeg" alt="Burritos">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Burrito.jpeg" alt="Burritos">
                     <h2>Burritos</h2>
                     <p>Tantalizing tacos, a fiesta of bold and spicy sensations.</p>
                 </article>
                 <article>
-                    <img src="Images/Tacos.jpeg" alt="Taco">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Tacos.jpeg" alt="Taco">
                     <h2>Tacos</h2>
                     <p>Wrapped joy, bursting with savory goodness.</p>
                 </article>
                 <article>
-                    <img src="Images/Desserts.jpeg" alt="Desserts">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Desserts.jpeg" alt="Desserts">
                     <h2>Desserts</h2>
                     <p>Sweet indulgence, where every bite is a dessert dream.</p>
                 </article>
@@ -73,7 +73,7 @@
         </section>
     </main>
     <div class="outer-container">
-        <form class="container">
+        <form class="container" method="post">
             <div class="reserve">Reserve Table</div>
             <input type="date" name="Date" id="Booked-date" required>
             <input type="time" name="time" id="Booked-time" required>
@@ -84,19 +84,19 @@
             <input type="radio" name="slider" id="item-5">
             <div class="cards">
                 <label class="card" for="item-1" id="song-1">
-                    <img src="Images/Indoor-4.jpg" alt="song">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Indoor-4.jpg" alt="song">
                 </label>
                 <label class="card" for="item-2" id="song-2">
-                    <img src="Images/Indoor-6.jpg" alt="song">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Indoor-6.jpg" alt="song">
                 </label>
                 <label class="card" for="item-3" id="song-3">
-                    <img src="Images/Outdoor-2.png" alt="song">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Outdoor-2.png" alt="song">
                 </label>
                 <label class="card" for="item-4" id="song-4">
-                    <img src="Images/Outdoor-4.png" alt="song">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Outdoor-4.png" alt="song">
                 </label>
                 <label class="card" for="item-5" id="song-5">
-                    <img src="Images/Indoor-2.jpg" alt="song">
+                    <img src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Indoor-2.jpg" alt="song">
                 </label>
             </div>
             <div class="details-left">
@@ -161,18 +161,46 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" name="Proceed" id="button-submit">     
+            <input type="submit" value="Proceed" id="button-submit">     
         </form>
     </div>
     <footer>
         <div>
-            <img id="foot-logo" src="Images/Logo3.png" alt="Little Lemon Logo (Small)">
+            <img id="foot-logo" src="https://little-lemon-nitis.s3.us-west-2.amazonaws.com/Images/Logo3.png" alt="Little Lemon Logo (Small)">
         </div>
         <div>
             <p>&copy; 2024 Little Lemon. All rights reserved.</p>
         </div>
     </footer>
 
-<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var body = document.querySelector("body");
+    var header = document.querySelector("header");
+    var maxScroll = window.innerHeight;
+    var isColorMode = false;
+
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        var scrollPercentage = (scrollPosition / maxScroll) * 100;
+
+        if (scrollPercentage >= 0 && scrollPercentage <= 100) {
+            body.style.backdropFilter = 'blur(' + (0.5+scrollPercentage/20) + 'px)';
+            header.style.backgroundColor = 'rgba(244, 206, 20,' + (scrollPercentage/50) + ')';
+        }
+
+        if(scrollPosition <= this.window.innerHeight){
+            body.style.backgroundSize = 100 + scrollPosition/40 + '%';
+        }
+
+        var logo = document.getElementById("logo");
+        if(scrollPosition > 50) {
+            logo.style.transform = 'translateX(0)';
+        } else {
+            logo.style.transform = 'translateX(-150%)';
+        }
+    });
+});
+</script>
 </body>
 </html>
