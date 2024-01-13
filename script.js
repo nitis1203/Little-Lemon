@@ -23,16 +23,5 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             logo.style.transform = 'translateX(-150%)';
         }
-        
-        if(scrollPercentage > 80 && !isColorMode){
-            body.style.backgroundColor = 'white';
-            body.style.backgroundImage = 'none';
-            isColorMode = true;
-        }
-        else if(scrollPercentage <= 80 && isColorMode) {
-            body.style.backgroundImage = `url('Images/bg2.jpg')`;
-            body.style.backgroundColor = 'transparent';
-            isColorMode = false;
-        }
     });
 });
